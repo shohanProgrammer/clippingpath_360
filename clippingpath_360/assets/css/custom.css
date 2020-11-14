@@ -1,0 +1,98 @@
+/*All custom style goes here*/
+.blog-bg {
+    background-image: url("../../images/blog.jpg");
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+
+.transparent-window {
+    background: rgba(37, 37, 37, 0.7) none repeat scroll 0 0;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.blog-grid {
+    position: relative;
+    width: 100%;
+    top: -132px;
+    z-index: 3;
+}
+.padding-custom{
+    padding-bottom: 592px;
+}
+.white-cl {
+    color: #ffffff;
+}
+
+.footer-bg {
+    background-image: url("../../images/contact-bg.jpg");
+    background-repeat: no-repeat;
+}
+
+.about-bg {
+    background-image: url("../../images/about-bg.jpg");
+    background-repeat: no-repeat;
+    margin-top: 40px;
+}
+
+.video-frame {
+    width: 90%;
+    height: 300px;
+}
+
+.start-video {
+    margin: 0 auto;
+    cursor: pointer;
+    height: 70px;
+    width: 70px;
+    background: #0C1021;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 15px 5px rgba(250, 251, 255, 0.75);
+    -moz-box-shadow: 0px 0px 15px 5px rgba(252, 255, 250, 0.75);
+    box-shadow: 0px 0px 15px 5px rgba(255, 249, 248, 0.75);
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+
+.start-video:hover {
+    background: #fe3b73;
+}
+
+/*Contact Form Style*/
+.text input[type=text]{
+    width:45%;
+    border-radius: 0;
+    float: left;
+    margin-right: 10%;
+
+}
+.number input[type=number]{
+    width:45%;
+    border-radius: 0;
+
+}
+.email input[type=email]{
+    border-radius: 0;
+}
+.textarea textarea{
+    border-radius: 0;
+}
+.submitBt{
+    float: right;
+    margin-top: 0;
+}
+/*End Form Style*/
+.white-cl li{
+    width: 60%;
+    margin: 15px;
+}
+.aboutSc .about_title{
+    margin-bottom: 20px;
+}
+.aboutSc{
+    width: 85%;
+}

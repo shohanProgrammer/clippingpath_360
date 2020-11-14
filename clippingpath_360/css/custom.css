@@ -1,0 +1,16 @@
+.panel_gb{
+    background-color: white;
+}
+.panel-pad{
+    padding-bottom: 10px;
+}
+.soto{
+    height: 15px;
+    width: 15px;
+}
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+.page-logo .logo-default{
+    margin: 12px 0 0!important;
+}
