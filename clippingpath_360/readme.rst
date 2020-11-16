@@ -1,3 +1,16 @@
+# clippingpath_360
+online freelancing web app project made with Codigniter framework
+Copy and paste main folder to the root directory
+import the database file called clippingpath_360.sql
+go the address : domain/clipping_360 (localhost/clippingpath_360)
+That's the front end
+Can register through sign up and login, pre logged in credintial : (azizmahmud2014@gmail.com/admin)for admin, (azizmahmud2013@gmail.com/1234)for client.
+
+
+Clients can create project/ make orders through this web app, Admin will review the order and can approve or reject, if the order get approval, client need to pay for order, then the project will be started.
+Client can see the progress of the work, can send message/give instruction etc.
+
+
 ###################
 What is CodeIgniter
 ###################
