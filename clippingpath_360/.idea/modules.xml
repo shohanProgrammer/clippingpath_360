@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../clipping_path/.idea/clipping_path.iml" filepath="$PROJECT_DIR$/../clipping_path/.idea/clipping_path.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/clippingpath_360.iml" filepath="$PROJECT_DIR$/.idea/clippingpath_360.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../qarigor/.idea/first_project.iml" filepath="$PROJECT_DIR$/../qarigor/.idea/first_project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../qarigor/.idea/qarigor.iml" filepath="$PROJECT_DIR$/../qarigor/.idea/qarigor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../wd005/.idea/shohan.iml" filepath="$PROJECT_DIR$/../wd005/.idea/shohan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../theboss/.idea/theboss.iml" filepath="$PROJECT_DIR$/../theboss/.idea/theboss.iml" />
+    </modules>
+  </component>
+</project>
