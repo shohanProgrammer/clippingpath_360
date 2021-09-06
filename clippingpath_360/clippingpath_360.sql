@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 4.6.5.2
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Aug 17, 2017 at 07:58 AM
--- Server version: 10.1.21-MariaDB
--- PHP Version: 7.1.1
+-- Host: localhost
+-- Generation Time: Sep 06, 2021 at 05:27 AM
+-- Server version: 10.4.14-MariaDB
+-- PHP Version: 7.4.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -82,6 +83,20 @@ CREATE TABLE `feedback` (
 INSERT INTO `feedback` (`id`, `star`, `comment`, `job_id`, `client_id`) VALUES
 (1, 5, 'Wow.. amazing', 2, 2),
 (7, 4, 'four stars', 11, 2);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `fund`
+--
+
+CREATE TABLE `fund` (
+  `id` int(10) NOT NULL,
+  `client_id` int(10) NOT NULL,
+  `permission` varchar(20) NOT NULL,
+  `amount` int(20) NOT NULL,
+  `status` varchar(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -161,7 +176,8 @@ CREATE TABLE `service_types` (
 
 INSERT INTO `service_types` (`id`, `service_name`) VALUES
 (1, 'Background Remove'),
-(2, 'Image Resize');
+(2, 'Image Resize'),
+(3, 'Manipulation ');
 
 -- --------------------------------------------------------
 
@@ -213,7 +229,7 @@ CREATE TABLE `user_section` (
 
 INSERT INTO `user_section` (`user_id`, `user_name`, `user_pass`, `user_type`, `first_name`, `last_name`, `email`, `phone`, `country`) VALUES
 (1, 'admin', 'admin', 'admin', 'MD', 'Nayem', 'azizmahmud2014@gmail.com', '01776554571', ''),
-(2, 'client', '12345', 'client', 'MD', 'Nayem', 'azizmahmud2014@gmail.com', '01776554571', '');
+(2, 'client', '12345', 'client', 'MD', 'Nayem', 'azizmahmud2013@gmail.com', '01776554571', '');
 
 --
 -- Indexes for dumped tables
@@ -229,6 +245,12 @@ ALTER TABLE `all_req`
 -- Indexes for table `feedback`
 --
 ALTER TABLE `feedback`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `fund`
+--
+ALTER TABLE `fund`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -270,36 +292,50 @@ ALTER TABLE `user_section`
 --
 ALTER TABLE `all_req`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+
 --
 -- AUTO_INCREMENT for table `feedback`
 --
 ALTER TABLE `feedback`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
+-- AUTO_INCREMENT for table `fund`
+--
+ALTER TABLE `fund`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `job_status`
 --
 ALTER TABLE `job_status`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
+
 --
 -- AUTO_INCREMENT for table `revision`
 --
 ALTER TABLE `revision`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+
 --
 -- AUTO_INCREMENT for table `service_types`
 --
 ALTER TABLE `service_types`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
 --
 -- AUTO_INCREMENT for table `ticket`
 --
 ALTER TABLE `ticket`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
 --
 -- AUTO_INCREMENT for table `user_section`
 --
 ALTER TABLE `user_section`
   MODIFY `user_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+COMMIT;
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
